@@ -1,0 +1,1 @@
+include ':app', ':XRecyclerView', ':banner', ':easeui', ':okhttputils'

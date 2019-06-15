@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider">
+
+    <GridView
+        android:id="@+id/share_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:listSelector="@color/translation"
+        android:numColumns="4"
+        android:paddingBottom="20px"
+        android:paddingTop="40px"
+        android:verticalSpacing="20px"></GridView>
+
+    <ImageView
+        android:id="@+id/qercode"
+        android:layout_width="380px"
+        android:layout_height="380px"
+        android:layout_above="@id/share_controller"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="350px"
+        android:src="@mipmap/ic_launcher" />
+</com.zhy.autolayout.AutoRelativeLayout>

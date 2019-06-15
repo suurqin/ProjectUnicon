@@ -1,0 +1,17 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:2:1-7:12
+	package
+		ADDED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:3:1-40
+		INJECTED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:4:1-40
+	android:minSdkVersion
+		ADDED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:4:11-37
+application
+ADDED from D:\workspace\android_workspace\ProjectUnicon\XRecyclerView\src\main\AndroidManifest.xml:5:1-16

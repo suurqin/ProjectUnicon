@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_loading_failed_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="加载失败"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="稍等片刻再试试"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+
+    <Button
+        android:id="@+id/base_loading_failed_refresh"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textColor="@color/white"
+        android:textSize="42dp" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.jm.projectunion.common.widget.TabIconView
+        android:id="@+id/main_bottom_tab_icon"
+        android:layout_width="@dimen/zre_common_home_tab_icon_width"
+        android:layout_height="@dimen/zre_common_home_tab_icon_height"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="matrix" />
+
+    <TextView
+        android:id="@+id/main_bottom_tab_text"
+        style="@style/HomeTabText" />
+
+</com.zhy.autolayout.AutoLinearLayout>
+

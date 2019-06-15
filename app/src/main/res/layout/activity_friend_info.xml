@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:background="@color/divider"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="基本信息"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260px">
+
+            <com.jm.projectunion.common.widget.CircleImageView
+                android:id="@+id/header_img"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="52px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:id="@+id/baseinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46px"
+                android:layout_toRightOf="@id/header_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/text_normal"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="性别"
+                    android:textColor="@color/text_normal"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:text="年龄"
+                    android:textColor="@color/text_normal"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/baseinfo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/upgrade"
+                    android:layout_width="216px"
+                    android:layout_height="72px"
+                    android:background="@drawable/semiangle_bg"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="71px"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20px"
+                        android:paddingRight="20px"
+                        android:text="升级高级会员"
+                        android:textSize="24px" />
+
+                    <ImageView
+                        android:layout_width="12px"
+                        android:layout_height="20px"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px">
+
+                <TextView
+                    android:id="@+id/telphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="电话：12345678919"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <ImageView
+                    android:id="@+id/friend_add"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_add_friend" />
+
+                <ImageView
+                    android:id="@+id/friend_im"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@id/friend_add"
+                    android:src="@mipmap/icon_im" />
+
+                <ImageView
+                    android:id="@+id/friend_tel"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@id/friend_im"
+                    android:src="@mipmap/icon_phone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:text="地址：北京市朝阳区"
+                android:textColor="@color/text_normal"
+                android:textSize="34px" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="88px"
+                    android:gravity="center_vertical"
+                    android:text="自我介绍"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+
+                <TextView
+                    android:id="@+id/complain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37px"
+                    android:gravity="right"
+                    android:text="投诉不实信息"
+                    android:textColor="@color/red"
+                    android:textSize="30px" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/self_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="jisnlklnang"
+                android:textColor="@color/text_normal"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginTop="20px"
+            android:background="@color/divider"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="专业信息"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="服务范围"
+                android:textColor="@color/text_normal"
+                android:textSize="30px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="(联系时说明在工程联盟app看到的)"
+                android:textColor="@color/mark"
+                android:textSize="30px" />
+        </LinearLayout>
+
+
+
+        <com.jm.projectunion.common.widget.NoScrollGridView
+            android:id="@+id/friend_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:horizontalSpacing="20px"
+            android:numColumns="3"
+            android:verticalSpacing="10px"></com.jm.projectunion.common.widget.NoScrollGridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="建筑行业类别"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/building_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10px"
+            android:paddingLeft="60px"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="公司形象"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <com.jm.projectunion.common.widget.NoScrollListView
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.jm.projectunion.common.widget.NoScrollListView>
+    </LinearLayout>
+</ScrollView>

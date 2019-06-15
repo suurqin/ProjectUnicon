@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="10px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:background="@color/divider"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="红包设定"
+            android:textColor="@color/text_normal"
+            android:textSize="34px" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="红包类型"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <RadioGroup
+                    android:id="@+id/city_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70px">
+
+                    <RadioButton
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radiobtn_bg"
+                        android:checked="true"
+                        android:paddingLeft="30px"
+                        android:text="同城"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+
+                    <RadioButton
+                        android:id="@+id/country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:button="@drawable/radiobtn_bg"
+                        android:paddingLeft="30px"
+                        android:text="全国"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="性别"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <RadioGroup
+                    android:id="@+id/redpacket_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="140px"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/sex_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radiobtn_bg"
+                        android:checked="true"
+                        android:paddingLeft="30px"
+                        android:text="不限"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+
+                    <RadioButton
+                        android:id="@+id/sex_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:button="@drawable/radiobtn_bg"
+                        android:paddingLeft="30px"
+                        android:text="男"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+
+                    <RadioButton
+                        android:id="@+id/sex_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:button="@drawable/radiobtn_bg"
+                        android:paddingLeft="30px"
+                        android:text="女"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="年龄"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <RadioGroup
+                    android:id="@+id/redpacket_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="140px">
+
+                    <RadioButton
+                        android:id="@+id/age_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radiobtn_bg"
+                        android:checked="true"
+                        android:paddingLeft="30px"
+                        android:text="不限"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+
+                    <RadioButton
+                        android:id="@+id/age_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:button="@drawable/radiobtn_bg"
+                        android:paddingLeft="30px"
+                        android:textColor="@color/text_normal"
+                        android:textSize="30px" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/age_min"
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_block_bg"
+                    android:hint="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:text="-" />
+
+                <EditText
+                    android:id="@+id/age_max"
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_block_bg"
+                    android:hint="100"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="单个红包金额"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+
+                <EditText
+                    android:id="@+id/redpacket_single"
+                    android:layout_width="180px"
+                    android:layout_height="58px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="10px"
+                    android:background="@drawable/shape_block_bg"
+                    android:hint="自定义"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="元"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="0.1元起"
+                    android:textColor="@color/text_normal_sub"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="红包份数"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/redpacket_num"
+                    android:layout_width="180px"
+                    android:layout_height="58px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="90px"
+                    android:layout_marginRight="10px"
+                    android:background="@drawable/shape_block_bg"
+                    android:hint="自定义"
+                    android:inputType="number"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="份"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:text="100的倍数"
+                    android:textColor="@color/text_normal_sub"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="可用金额"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/money_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="90px"
+                    android:background="@color/translation"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/money_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="所需"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="充值"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/money_need"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="154px"
+                    android:layout_toLeftOf="@id/recharge"
+                    android:layout_toRightOf="@id/money_label"
+                    android:background="@color/translation"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textColor="@color/red"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="红包标题"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="90px"
+                    android:background="@drawable/shape_block_bg"
+                    android:gravity="center_vertical"
+                    android:hint="输入红包标题"
+                    android:maxLength="6"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="4px"
+                    android:text="联系电话"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="90px"
+                    android:background="@drawable/shape_block_bg"
+                    android:gravity="center_vertical"
+                    android:hint="输入联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="34px"
+            android:paddingRight="34px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="地址"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="154px"
+                    android:background="@color/translation"
+                    android:gravity="center_vertical"
+                    android:hint="请输入地址"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginTop="30px"
+            android:background="@color/divider"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="红包内容"
+            android:textColor="@color/text_normal"
+            android:textSize="34px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/imge1"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="40px">
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center"
+                    android:background="@color/divider"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_add" />
+
+                <ImageView
+                    android:id="@+id/pic_del1"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_del" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/imge2"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="40px">
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center"
+                    android:background="@color/divider"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_add" />
+
+                <ImageView
+                    android:id="@+id/pic_del2"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_del" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/imge3"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="40px">
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center"
+                    android:background="@color/divider"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_add" />
+
+                <ImageView
+                    android:id="@+id/pic_del3"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_del" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/imge4"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_marginLeft="40px">
+
+                <ImageView
+                    android:id="@+id/pic4"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center"
+                    android:background="@color/divider"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_add" />
+
+                <ImageView
+                    android:id="@+id/pic_del4"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/pic_del" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:horizontalSpacing="20px"
+            android:listSelector="@color/translation"
+            android:numColumns="4"
+            android:scrollbars="none"></GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="画面 1"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/intro1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@color/translation"
+                    android:hint="输入内容15字以内"
+                    android:maxLength="15"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="画面 2"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/intro2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@color/translation"
+                    android:hint="输入内容15字以内"
+                    android:maxLength="15"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="画面 3"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/intro3"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="10px"
+                    android:background="@color/translation"
+                    android:hint="输入内容15字以内"
+                    android:maxLength="15"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:text="画面 4"
+                    android:textColor="@color/text_normal"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/intro4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@color/translation"
+                    android:hint="输入内容15字以内"
+                    android:maxLength="15"
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/login_regist_input_txt"
+                    android:textSize="34px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/release"
+            android:layout_width="261px"
+            android:layout_height="50px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25px"
+            android:background="@drawable/login_regist_bg"
+            android:text="发布"
+            android:textColor="@color/text_normal"
+            android:textSize="24px" />
+    </LinearLayout>
+</ScrollView>

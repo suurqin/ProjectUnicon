@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_regist_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="120px"
+        android:src="@mipmap/login_mark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="180px"
+        android:background="@mipmap/login_regist_input_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@mipmap/login_regist_label_user" />
+
+        <EditText
+            android:id="@+id/login_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@null"
+            android:hint="输入手机号"
+            android:inputType="phone"
+            android:textColor="@color/login_regist_input_txt"
+            android:textColorHint="@color/login_regist_input_txt"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/login_regist_input_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@mipmap/login_regist_label_pw" />
+
+        <EditText
+            android:id="@+id/login_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@null"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/login_regist_input_txt"
+            android:textColorHint="@color/login_regist_input_txt"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="25px">
+
+        <TextView
+            android:id="@+id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="无账号，去注册>>"
+            android:textColor="@color/login_regist_hint"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/no_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="忘记密码"
+            android:textColor="@color/login_regist_hint"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="450px"
+        android:layout_height="79px"
+        android:layout_marginTop="90px"
+        android:background="@drawable/login_regist_bg"
+        android:text="登录"
+        android:textColor="@color/text_normal"
+        android:textSize="34px" />
+</LinearLayout>

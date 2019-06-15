@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen ame="nav_header_height">160dp</dimen>-->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="actionBarSize">45dp</dimen>
+    <dimen name="index_bar_view_margin">10dp</dimen>
+
+
+    <!-- 头部高度 -->
+    <dimen name="zre_common_titlebar_height">40dp</dimen>
+
+    <dimen name="zre_common_titlebar_icon_height">20dp</dimen>
+    <dimen name="zre_common_titlebar_icon_width">12dp</dimen>
+    <dimen name="zre_common_titlebar_right_icon_height">20dp</dimen>
+    <dimen name="zre_common_titlebar_right_icon_width">20dp</dimen>
+    <dimen name="zre_common_driver_height">1dp</dimen>
+
+    <dimen name="zre_activity_margin_left">14dp</dimen>
+    <dimen name="zre_activity_margin_right">14dp</dimen>
+
+    <dimen name="book_read_top_text">16sp</dimen>
+    <dimen name="book_read_bottom_text">12dp</dimen>
+
+    <dimen name="zre_common_home_tab_icon_height">40px</dimen>
+    <dimen name="zre_common_home_tab_icon_width">40px</dimen>
+    <dimen name="zre_common_home_tab_padding">10px</dimen>
+</resources>

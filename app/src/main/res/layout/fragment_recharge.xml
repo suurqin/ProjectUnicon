@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="50px"
+            android:text="充值金额"
+            android:textColor="@color/text_normal"
+            android:textSize="34px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="60px"
+            android:paddingLeft="50px"
+            android:paddingTop="80px">
+
+            <ImageView
+                android:layout_width="48px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/money_mask" />
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:background="@color/translation"
+                android:hint="输入金额"
+                android:inputType="numberDecimal"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/divider_line"
+                android:textSize="60px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:background="@color/divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:text="选择支付方式"
+        android:textColor="@color/text_normal"
+        android:textSize="34px" />
+
+    <RadioGroup
+        android:id="@+id/pay_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/pay_wx"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:button="@color/translation"
+            android:drawableLeft="@mipmap/icon_wxpay"
+            android:drawablePadding="30px"
+            android:drawableRight="@drawable/radiobtn_bg"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="微信支付" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RadioButton
+            android:id="@+id/pay_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:button="@color/translation"
+            android:checked="true"
+            android:drawableLeft="@mipmap/icon_alipay"
+            android:drawablePadding="30px"
+            android:drawableRight="@drawable/radiobtn_bg"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="支付宝支付" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="261px"
+        android:layout_height="68px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32px"
+        android:background="@drawable/login_regist_bg"
+        android:text="充值"
+        android:textColor="@color/text_normal"
+        android:textSize="30px" />
+</LinearLayout>

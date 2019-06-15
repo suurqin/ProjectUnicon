@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translation"
+    android:gravity="center">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="650px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_radiu_big_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/confirm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="44px"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/confirm_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14px"
+            android:gravity="center"
+            android:text="请输入您的手机号"
+            android:textColor="@color/black"
+            android:textSize="26px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="42px"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_nagetive"
+                android:layout_width="match_parent"
+                android:layout_height="74px"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_selected"
+                android:textSize="36px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_positive"
+                android:layout_width="match_parent"
+                android:layout_height="74px"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/text_selected"
+                android:textSize="36px" />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

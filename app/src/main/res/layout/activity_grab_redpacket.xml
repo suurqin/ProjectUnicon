@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="625px"
+        android:layout_height="731px"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="128px"
+        android:background="@drawable/red_packet_bg">
+
+        <TextView
+            android:id="@+id/packet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:text="红包标题"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/packet"
+            android:layout_width="625px"
+            android:layout_height="299px"
+            android:layout_below="@id/packet_title"
+            android:layout_marginTop="40px"
+            android:src="@mipmap/packet" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="460px"
+            android:layout_height="88px"
+            android:layout_below="@id/packet_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120px"
+            android:background="@drawable/white_radiu_bg"
+            android:gravity="center"
+            android:textColor="@color/text_normal"
+            android:textSize="36px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50px"
+            android:text="联系电话:"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10px"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+
+        <com.jm.projectunion.common.widget.CircleImageView
+            android:id="@+id/avator"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_above="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10px"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/app_logo" />
+    </RelativeLayout>
+</RelativeLayout>

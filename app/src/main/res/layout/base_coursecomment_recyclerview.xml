@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/final_exam"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/comment_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="评论一下"
+                android:layout_height="match_parent"/>
+            <!--<Button
+                andruserIdd:iduserId@+id/comment_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/course_comment_edit"
+                android:layout_height="match_parent"/>-->
+         <!--   <TextView
+                andruserIdd:iduserId@+id/send_comment"
+                android:layout_width="100px"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="#0f0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="12sp" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pull_refresh_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/pull_refresh_empty_image"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/pull_refresh_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textColor="#acacac"
+            android:textSize="24px" />
+    </LinearLayout>
+</RelativeLayout>

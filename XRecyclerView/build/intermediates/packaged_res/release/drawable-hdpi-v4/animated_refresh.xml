@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/refresh_picture"
+    tools:ignore="UnusedResources,NewApi">
+
+    <target
+        android:name="block"
+        android:animation="@anim/obj_refresh_path1" />
+    <target
+        android:name="shortlines"
+        android:animation="@anim/obj_refresh_path2" />
+    <target
+        android:name="longlilnes"
+        android:animation="@anim/obj_refresh_path3" />
+</animated-vector>

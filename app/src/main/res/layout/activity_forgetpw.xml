@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_regist_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_marginTop="120px"
+        android:src="@mipmap/login_mark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="130px"
+        android:background="@mipmap/login_regist_input_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@mipmap/login_regist_label_user" />
+
+        <EditText
+            android:id="@+id/regist_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@null"
+            android:hint="输入手机号"
+            android:inputType="phone"
+            android:textColor="@color/login_regist_input_txt"
+            android:textColorHint="@color/login_regist_input_txt"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px">
+
+        <TextView
+            android:id="@+id/regist_count_down"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/login_regist_safecode_bg"
+            android:gravity="center"
+            android:padding="5px"
+            android:text="点击发送验证码"
+            android:textColor="@color/text_normal"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@id/regist_count_down"
+            android:background="@mipmap/login_regist_input_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:src="@mipmap/login_regist_label_safecode" />
+
+            <EditText
+                android:id="@+id/regist_safecode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:background="@null"
+                android:hint="输入验证码"
+                android:inputType="phone"
+                android:textColor="@color/login_regist_input_txt"
+                android:textColorHint="@color/login_regist_input_txt"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/login_regist_input_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@mipmap/login_regist_label_pw" />
+
+        <EditText
+            android:id="@+id/regist_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="24px"
+            android:background="@null"
+            android:hint="设置密码"
+            android:inputType="textPassword"
+            android:textColor="@color/login_regist_input_txt"
+            android:textColorHint="@color/login_regist_input_txt"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="450px"
+        android:layout_height="79px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/login_regist_bg"
+        android:text="确定"
+        android:textColor="@color/text_normal"
+        android:textSize="34px" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/bank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="88px"
+        android:button="@color/translation"
+        android:drawablePadding="30px"
+        android:gravity="center_vertical"
+        android:text="招商银行" />
+
+    <ImageView
+        android:id="@+id/check_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/radio_nor" />
+</RelativeLayout>

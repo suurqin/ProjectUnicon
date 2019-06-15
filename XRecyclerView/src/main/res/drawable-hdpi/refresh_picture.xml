@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportHeight="30.0"
+    android:viewportWidth="30.0"
+    tools:ignore="VectorRaster">
+    <group android:name="block">
+        <path
+            android:name="path1"
+            android:pathData="M 5,5 L 11,5 M 11,5 L 11,11 M 11,11 L 5,11 M 5,11 L 5,5"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+    </group>
+    <group android:name="shortlines">
+        <path
+            android:name="path2"
+            android:pathData="
+        M15,5
+        L25,5"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+        <path
+            android:name="path3"
+            android:pathData="
+        M15,8
+        L25,8"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+        <path
+            android:name="path4"
+            android:pathData="
+        M15,11
+        L25,11"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+    </group>
+    <group android:name="longlilnes">
+        <path
+            android:name="path5"
+            android:pathData="
+        M5,14
+        L25,14"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+        <path
+            android:name="path6"
+            android:pathData="
+        M5,17
+        L25,17"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+        <path
+            android:name="path7"
+            android:pathData="
+        M5,20
+        L25,20"
+            android:strokeColor="@color/refresh_color"
+            android:strokeWidth="1" />
+    </group>
+</vector>

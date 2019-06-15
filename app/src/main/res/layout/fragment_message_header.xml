@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@mipmap/main_page_bg"
+        android:gravity="center"
+        android:text="消息"
+        android:textColor="@color/text_normal"
+        android:textSize="36px" />
+
+    <RelativeLayout
+        android:id="@+id/msg_system"
+        android:layout_width="match_parent"
+        android:layout_height="129px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_msg_system"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/msg_system" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="129px"
+            android:layout_marginLeft="26px"
+            android:layout_toRightOf="@id/icon_msg_system"
+            android:drawableRight="@mipmap/arrow_right_light"
+            android:gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="系统消息"
+            android:textColor="@color/text_normal"
+            android:textSize="34px" />
+
+        <ImageView
+            android:id="@+id/mark_msg_system"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:background="@drawable/red_packet_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/msg_industry"
+        android:layout_width="match_parent"
+        android:layout_height="129px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_msg_industry"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/msg_industry" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="129px"
+            android:layout_marginLeft="26px"
+            android:layout_toRightOf="@id/icon_msg_industry"
+            android:drawableRight="@mipmap/arrow_right_light"
+            android:gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="行业动态"
+            android:textColor="@color/text_normal"
+            android:textSize="34px" />
+
+        <ImageView
+            android:id="@+id/mark_msg_industry"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:background="@drawable/red_packet_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/msg_data"
+        android:layout_width="match_parent"
+        android:layout_height="129px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_msg_data"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@mipmap/msg_data" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="129px"
+            android:layout_marginLeft="26px"
+            android:layout_toRightOf="@id/icon_msg_data"
+            android:drawableRight="@mipmap/arrow_right_light"
+            android:gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="常用数据"
+            android:textColor="@color/text_normal"
+            android:textSize="34px" />
+
+        <ImageView
+            android:id="@+id/mark_msg_data"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            android:background="@drawable/red_packet_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+</LinearLayout>

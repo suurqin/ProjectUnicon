@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<android.support.v4.view.ViewPager-->
+        <com.jm.projectunion.common.widget.NoSlideViewPager
+            android:id="@+id/ixt_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/main_page_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/translation"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/tab_item_main_img_selector"
+                    android:drawablePadding="3dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5px"
+                    android:text="首页"
+                    android:textSize="20px"
+                    android:textColor="@color/text_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/translation"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/tab_item_msg_img_selector"
+                    android:drawablePadding="3dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5px"
+                    android:text="消息"
+                    android:textColor="@color/text_normal"
+                    android:textSize="20px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/translation"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/inputmsg"
+                    android:drawablePadding="3dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5px"
+                    android:textSize="20px"
+                    android:text="信息录入"
+                    android:textColor="@color/text_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/translation"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/friends"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/tab_item_friend_img_selector"
+                    android:drawablePadding="3dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5px"
+                    android:textSize="20px"
+                    android:text="好友"
+                    android:textColor="@color/text_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/translation"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/tab_item_my_img_selector"
+                    android:drawablePadding="3dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="5px"
+                    android:textSize="20px"
+                    android:text="我的"
+                    android:textColor="@color/text_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translation_half"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/loading_pic"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/loading" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

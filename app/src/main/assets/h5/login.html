@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+<title>易＋“悬赏令”</title>
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="js/jquery.base64.js" type="text/javascript"></script>
+<script src="js/register.js" type="text/javascript"></script>
+<script src="js/adapt6.js" type="text/javascript"></script>
+</head>
+<body>
+<html>
+<body>
+</head>
+<body>
+<section class="j_section">
+	<div class="logo"><p>logo</p></div>
+	<div class="j_login">
+
+		<p><i class="i1"></i><input type="text" placeholder="输入手机号" id="username"></p>
+		<p><i class="i2"></i><input type="text" placeholder="输入验证码" class="input1" id="code"><span onclick="sendMsgCode()" id="second_show">发送</span></p>
+		<p><input type="password" value="" placeholder="输入密码" id="password" style="padding-left:0.6rem"></p>
+		<p><i class="i1"></i><input type="text" placeholder="推荐人手机号" id="mobile" value="15046884556" readonly="readonly"></p>
+		<h6><input type="checkbox"  checked="checked">同意《<a href="#">工程联盟服务协议</a>》</h6>
+		<p><button>下载APP</button></p>
+		<p><button onclick="register()">立即注册</button></p>
+	</div>
+</section>
+<script type="text/javascript">
+	$(function(){
+		var secH=$(".j_section").height();
+		var logoH=$(".logo").height();
+		$(".j_login").height(secH-logoH)
+	  var moblieBase = GetQueryString("mobile")
+	 if(moblieBase !=null){
+	 	var mobile =$.base64.decode(moblieBase);
+	 	$("#mobile").val(mobile);
+	 }	
+	})
+	
+
+	var gg = parseInt(60);
+	var ints =0;
+
+	function sendMsgCode(){
+		if(60==gg){
+			//发送验证码
+			/* 执行 */
+			sendCode();
+			//开启记时器
+			ints =window.setInterval("clock()",1000);
+		}
+	}
+	
+	function clock(){
+		
+		$('#second_show').html('<b>'+gg+'</b>s后重新<br/>发送');
+		
+		if(gg==-1){
+			restart();
+		}
+		gg--;
+	}
+	
+
+	//停止
+	function restart(){
+		window.clearInterval(ints);
+		$('#second_show').html('发送');
+		history.go(0);
+	}
+	
+	
+</script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html> 

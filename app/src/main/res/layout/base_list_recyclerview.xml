@@ -1,0 +1,38 @@
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/pull_refresh_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/pull_refresh_empty_image"
+                android:layout_width="30px"
+                android:layout_height="30px" />
+
+            <TextView
+                android:id="@+id/pull_refresh_empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@id/pull_refresh_empty_image"
+                android:textColor="#acacac"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

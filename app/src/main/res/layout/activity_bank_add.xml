@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="34px"
+        android:paddingRight="34px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/start_red"
+                android:drawablePadding="4px"
+                android:text="姓名："
+                android:textColor="@color/text_normal"
+                android:textSize="34px" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:background="@color/translation"
+                android:gravity="center_vertical"
+                android:hint="输入姓名"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/login_regist_input_txt"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="34px"
+        android:paddingRight="34px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/start_red"
+                android:drawablePadding="4px"
+                android:text="支付宝账号："
+                android:textColor="@color/text_normal"
+                android:textSize="34px" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:background="@color/translation"
+                android:gravity="center_vertical"
+                android:hint="支付宝账号"
+                android:inputType="number"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/login_regist_input_txt"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="450px"
+        android:layout_height="79px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90px"
+        android:background="@drawable/login_regist_bg"
+        android:text="添加"
+        android:textColor="@color/text_normal"
+        android:textSize="34px" />
+</LinearLayout>

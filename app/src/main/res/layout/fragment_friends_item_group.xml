@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="106px"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/child_top"
+        android:layout_width="match_parent"
+        android:layout_height="106px"
+        android:background="@color/divider"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <com.jm.projectunion.common.widget.CircleImageView
+            android:id="@+id/avator"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/app_logo" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/avator" />
+
+        <TextView
+            android:id="@+id/vip_type_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:text="会员类型" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/friend_tel"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_phone" />
+
+
+            <ImageView
+                android:id="@+id/friend_im"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/icon_im" />
+
+            <TextView
+                android:id="@+id/friend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="20px"
+                android:drawableRight="@mipmap/arrow_dow"
+                android:textColor="@color/text_normal_sub"
+                android:textSize="24px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

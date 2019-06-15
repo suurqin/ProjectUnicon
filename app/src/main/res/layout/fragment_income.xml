@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/text_selected"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收入"
+            android:textColor="@color/text_normal"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="支出"
+            android:textColor="@color/text_normal"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_line" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

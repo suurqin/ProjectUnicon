@@ -1,0 +1,254 @@
+
+body{line-height: 1;height: 100%;}
+/*==============公用===============*/
+.j_position{
+    position: absolute;
+    top: 0;
+    height: auto;
+    bottom: 2.2rem;
+    width:100%;
+    overflow-y: scroll;
+}
+/*================提示语===============*/
+.tishi{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width:70%;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: .7rem;
+    text-align: center;
+    font-size: .7rem;
+    display: none;
+}
+/*=================左侧栏==================*/
+.j_information{}
+.j_informL{
+    width: 3rem;
+    background-color: #9da4b4;
+    font-size: .7rem;
+    position: fixed;
+    color: #333;
+    top: 0;
+    overflow-y: scroll;
+    background:url(../images/bg6.png) repeat-y;
+    background-size: cover;
+}
+.j_informL a{
+    display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    height:6.9rem;
+    line-height: 1.3;
+    background:url(../images/bg8.png) no-repeat;
+    background-size: 100% 6.9rem;
+    
+}
+.j_informL a.hover{
+    background:url(../images/bg7.png) no-repeat;
+    background-size: 100% 6.9rem;
+}
+.j_informL a:first-child{
+    border-top: 0;
+}
+/*============右侧栏===================*/
+.j_informR{
+    margin-left: 3rem;
+}
+.j_infortable table{
+    
+    width: 100%;
+}
+.r_tablecontent2{
+    overflow-y: scroll;
+    background-color: #efeff4;
+}
+.j_infortable table tr{}
+.j_infortable table tr th,.j_infortable table tr td{
+    font-weight: normal;
+    text-align: center;
+    border:1px solid #fff;
+    font-size: 0.7rem;
+    padding:.5rem .2rem;
+}
+.j_infortable table tr th{
+    font-size: 0.65rem;
+    background-color: #c9cfd8;
+}
+.j_infortable table tr .widthed{
+    width: 55%;
+}
+.j_infortable table tr td label{
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    position: relative;
+}
+.j_infortable table tr td label input{
+    display: none;
+    width: .6rem;
+    height: .6rem;
+    display: none;
+}
+.j_infortable table tr td  label i{
+    display: block;
+    width: .6rem;
+    height: .6rem;
+    background:url(../images/icon5.png) no-repeat;
+    background-size: cover;
+}
+.j_infortable table tr td label input:checked + i{
+    background:url(../images/icon4.png) no-repeat;
+    background-size: cover;
+}
+/*====================页尾====================*/
+.j_infofoot{
+    position: fixed;
+    width: 100%;
+    height: 2.2rem;
+    bottom: 0;
+    left: 0;
+    background:url(../images/bg5.png) no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    -webkit-box-pack:justify;
+    -webkit-box-align:center;
+    padding: 0 .7rem;
+}
+.j_infofoot p{
+    font-size:.55rem;
+    color: #005ffc;
+}
+.j_infofoot .j_footR{}
+.j_infofoot .j_footR span{
+    font-size:.65rem;
+    color: #000;
+    background:#e6e8ed; 
+    padding: .3rem .5rem;
+    border-radius: 4px;
+    box-shadow: -1px -1px 1px #4e4f50;
+}
+/*===================登录并注册=======================*/
+.j_section{
+    width: 100%;
+    background-color: #efeff4;
+}
+.logo{
+    height: 8rem;
+}
+.logo p{
+    font-size: 1.8rem;
+    color: #333;
+    padding-top: 4.75rem;
+    text-align: center;
+}
+.j_login{
+    padding: 4.45rem 1.25rem 0;
+    background: url(../images/bg.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 26rem;
+}
+.j_login p{
+    height: 2.2rem;
+    display: -webkit-box;
+    -webkit-box-pack:justify;
+    -webkit-box-align:center;
+    position: relative;
+    margin-bottom: 0.75rem;
+    border-radius: 10px;
+}
+.j_login p i{
+    position: absolute;
+    display: block;
+    left: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.j_login p i.i1{
+    width:0.8rem;
+    height: 1.0rem;
+    background: url(../images/icon1.png) no-repeat;
+    background-size: cover;
+}
+.j_login p i.i2{
+    width:0.925rem;
+    height: 1.075rem;
+    background: url(../images/icon2.png) no-repeat;
+    background-size: cover;
+}
+.j_login p i.i3{
+    width:0.8rem;
+    height: 1.1rem;
+    background: url(../images/icon3.png) no-repeat;
+    background-size: cover;
+}
+.j_login p input{
+    display: -webkit-box;
+    /* width: 95%; */
+    font-size: 0.7rem;
+    color: #333;
+    height: 2.2rem;
+    background: none;
+    -webkit-box-flex: 1;
+    padding-left: 1.7rem;
+    padding-top: .2rem;
+    background: url(../images/bg1.png) no-repeat;
+    background-size: cover;
+}
+.j_login p input.input1{
+    background: url(../images/bg2.png) no-repeat;
+    background-size: 100% 2.2rem;
+    margin-right: 0.75rem;
+}
+.j_login p span{
+    width: 4.5rem;
+    height: 2.2rem;
+    display: -webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 0.7rem;
+    color: #333;
+    background: url(../images/bg3.png) no-repeat;
+    background-size: 100% 2.2rem;
+}
+.j_login p input::-webkit-input-placeholder{
+    color: #666;
+}
+.j_login p button{
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+    background: url(../images/bg4.png) no-repeat;
+    background-size: 100% 2.2rem;
+    font-size: 0.75rem;
+    color: #000;
+    border: 0;
+    margin-top: 1.5rem;
+}
+.j_login h6{
+    display: -webkit-box;
+    font-size: .5rem;
+    -webkit-box-align:center;
+    color: #333;
+}
+.j_login h6 a{
+    color: #005ffc;
+}
+.j_login h6 b{
+    display: block;
+    width: .6rem;
+    height: .6rem;
+    background:url(../images/icon5.png) no-repeat;
+    background-size: cover;
+    margin-right: .5rem;
+}
+.j_login h6 b.hover{
+    background:url(../images/icon4.png) no-repeat;
+    background-size: cover;
+}

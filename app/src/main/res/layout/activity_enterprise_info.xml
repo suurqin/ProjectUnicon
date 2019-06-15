@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="公司名称："
+                android:textColor="@color/text_normal"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/company_money"
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="注册资金："
+                android:textColor="@color/text_normal"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/company_master"
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="法人名称："
+                android:textColor="@color/text_normal"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/company_address"
+                android:layout_width="wrap_content"
+                android:layout_height="88px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="公司地址："
+                android:textColor="@color/text_normal"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginTop="20px"
+            android:background="@color/divider"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="专业信息"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/service_scope"
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="服务范围"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <com.jm.projectunion.common.widget.NoScrollGridView
+            android:id="@+id/friend_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"></com.jm.projectunion.common.widget.NoScrollGridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="建筑行业类别"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/building_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10px"
+            android:paddingLeft="60px"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="公司形象"
+            android:textColor="@color/text_normal"
+            android:textSize="30px" />
+
+        <com.jm.projectunion.common.widget.NoScrollListView
+            android:id="@+id/company_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.jm.projectunion.common.widget.NoScrollListView>
+    </LinearLayout>
+</ScrollView>

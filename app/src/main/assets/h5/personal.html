@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+<title>易＋“悬赏令”</title>
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="js/adapt6.js" type="text/javascript"></script>
+<script src="js/jquery.base64.js" type="text/javascript"></script>
+<script src="js/index.persional.js" type="text/javascript"></script>
+</head>
+<body>
+<html>
+<style type="text/css">
+	.j_infortable table tr td label i{
+		margin-right: .3rem;
+	}
+</style>
+<body>
+<section class="j_position">
+	<div class="j_information">
+		<nav class="j_informL">
+			<a href="javascript:;" id="21" class="hover">人工</a>
+			<a href="javascript:;" id="22">管理<br>人才</a>
+			<a href="javascript:;" id="23">材料</a>
+			<a href="javascript:;" id="24">机械</a>
+		</nav>
+		<div class="j_informR">
+			<div class="j_infortable" style="display: black">
+				<div class="r_tablecontent1">
+					<table>
+						<tr>
+							<th style="width:55%">人工</th>
+						</tr>
+					</table>
+				</div>
+				<div class="r_tablecontent2">
+					<table id="tab_21">
+						
+					</table>
+				</div>
+			</div>
+			<div class="j_infortable" style="display: none">
+				<div class="r_tablecontent1">
+					<table>
+						<tr>
+							<th style="width:55%">管理人才</th>
+						</tr>
+					</table>
+				</div>
+				<div class="r_tablecontent2">
+					<table id="tab_22">
+						
+					</table>
+				</div>
+			</div>
+			<div class="j_infortable" style="display: none">
+				<div class="r_tablecontent1">
+					<table>
+						<tr>
+							<th style="width:55%">材料</th>
+						</tr>
+					</table>
+				</div>
+				<div class="r_tablecontent2">
+					<table id="tab_23">
+						
+					</table>
+				</div>
+			</div>
+			<div class="j_infortable" style="display: none">
+				<div class="r_tablecontent1">
+					<table>
+						<tr>
+							<th style="width:55%">机械</th>
+						</tr>
+					</table>
+				</div>
+				<div class="r_tablecontent2">
+					<table id="tab_24">
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="j_infofoot">
+		<p>您最多可选择16项 (<span>0</span>/16)</p>
+		<div class="j_footR">
+			<span onclick="uploadData()">保存</span>
+			<!--<span >确认上传</span>-->
+		</div>
+	</footer>
+</section>
+<!-- <div class="tishi">最多可选择16条</div> -->
+<script type="text/javascript">
+	$(function(){
+		//默认显示第一个
+		initData();
+		//selectTab(1);
+		//动态给左侧栏、右侧滑动区域高度
+		var positionH=$(".j_position").height();
+			$(".j_informL").height(positionH);
+		var table1=$(".r_tablecontent1").height();
+			$(".r_tablecontent2").height(positionH-table1);
+		//切换
+		$(".j_informL a").on("click",function(){
+			$(this).addClass("hover").siblings().removeClass("hover");
+			var that=$(this).index();
+			var cid = $(this).attr("id");
+
+			//进行切换
+			//selectTab(cid);
+			$(".j_informR .j_infortable").eq(that).show().siblings().hide()
+
+		})
+		
+	})
+</script>
+</body>
+</html>
+</body>
+</html> 

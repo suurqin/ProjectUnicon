@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translation">#00000000</color>
+    <color name="translation_half">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="text_normal">#333333</color>
+    <color name="text_normal_sub">#999999</color>
+    <color name="text_selected">#E77F24</color>
+    <color name="text_selected2">#005FFC</color>
+    <color name="login_regist_input_txt">#666666</color>
+    <color name="login_regist_hint">#005ffc</color>
+    <color name="divider">#EFEFF4</color>
+    <color name="divider_line">#C5C5C5</color>
+    <color name="shape_stroke">#B4B4B4</color>
+    <color name="mark">#3084A3</color>
+</resources>

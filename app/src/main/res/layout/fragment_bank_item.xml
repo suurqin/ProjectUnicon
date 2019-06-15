@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="690px"
+        android:layout_height="260px"
+        android:layout_centerInParent="true"
+        android:background="#4d71ad">
+
+        <com.jm.projectunion.common.widget.CircleImageView
+            android:id="@+id/bank_pic"
+            android:layout_width="68px"
+            android:layout_height="68px"
+            android:layout_marginLeft="36px"
+            android:layout_marginTop="56px"
+            android:src="@mipmap/app_logo" />
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bank_pic"
+            android:layout_marginLeft="20px"
+            android:layout_toEndOf="@+id/bank_pic"
+            android:layout_toRightOf="@+id/bank_pic"
+            android:textColor="@color/white"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/bank_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bank_name"
+            android:layout_alignStart="@+id/bank_name"
+            android:layout_below="@+id/bank_name"
+            android:layout_marginTop="5px"
+            android:text="储蓄卡"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/bank_num_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_alignLeft="@+id/bank_type"
+            android:layout_alignStart="@+id/bank_type"
+            android:layout_below="@+id/bank_type"
+            android:layout_marginTop="5px"
+            android:gravity="center"
+            android:text="****     ****     ****"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/bank_num"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bank_type"
+            android:layout_marginEnd="36px"
+            android:layout_marginRight="36px"
+            android:gravity="center"
+            android:text="1234"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/bank_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15px"
+            android:layout_marginRight="36px"
+            android:text="解除绑定"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>
