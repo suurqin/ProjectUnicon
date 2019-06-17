@@ -168,15 +168,19 @@ public class RecruitFragment extends BaseExtraFragment {
 //                    intent1.putExtra(UiGoto.BUNDLE, aredId);
 //                    getActivity().startActivityForResult(intent1, 100);
                     Intent intent = new Intent(getActivity(),LocationActivity.class);
+                    intent.putExtra("location",region.getText());
                     getActivity().startActivityForResult(intent, 100);
                 } else if (atype == 4) {
 //                    Intent intent = new Intent(getActivity(),LocationProvinceActivity.class);
 //                    getActivity().startActivityForResult(intent, 100);
+
+
                     Intent intent = new Intent(getActivity(),LocationActivity.class);
                     intent.putExtra("location",region.getText());
                     getActivity().startActivityForResult(intent, 100);
                 }else {
                     Intent intent = new Intent(getActivity(),LocationActivity.class);
+                    intent.putExtra("location",region.getText());
                     getActivity().startActivityForResult(intent, 100);
                 }
                 break;

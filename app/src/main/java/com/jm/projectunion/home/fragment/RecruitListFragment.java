@@ -57,6 +57,11 @@ public class RecruitListFragment extends BaseListFragment {
         }
         AreaBean bean = daoUtil.queryByName(prefUtils.getKeyLocationCity());
         if (null != bean) {
+            if(atype == 4){
+                while (bean != null && !bean.getPid().equals("1")){
+                    bean = daoUtil.queryById(bean.getPid());
+                }
+            }
             values = String.valueOf(bean.getAreaId());
         }
         getData(atype + "", types, values, "0");
